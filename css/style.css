@@ -124,3 +124,25 @@ input {
 #search > div > button:last-child {
   margin: 0 20px 0 0;
 }
+
+#subnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 30px 20px;
+  margin: 10px 0 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+#subnav > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#subnav > button, #subnav > div > button {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 8px;
+}

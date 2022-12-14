@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+}
+
+/* The Universal Selector */
+*, /* All elements*/
+*::before, /* All ::before pseudo-elements */
+*::after { /* All ::after pseudo-elements */
+  /* height & width will now include border & padding by default
+     but can be over-ridden as needed */
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+/* Use a system font, if none are available use an available sans-sarif   font */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 55px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+#destinations, #actions {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+#destinations > p:first-child {
+  font-size: 20px;
+}
+
+#destinations {
+  gap: 32px;
+}
+
+#actions {
+  gap: 10px;
+}
+
+#actions > p {
+  padding: 8px 18px;
+  border-radius: 25px;
+}
+
+#actions > p:first-child {
+  color: rgba(0, 87, 255, 1);
+  background-color: rgba(222, 232, 255, 0.5);
+  border: 1px solid rgba(222, 232, 255, 1);
+}
+
+#actions > p:nth-child(2) {
+  color: white;
+  background-color: rgba(0, 87, 255, 1);
+}
+
+#actions > p:last-child {
+  color: rgba(25, 25, 25, 1);
+  border: 1px solid rgba(0, 0, 0, 0.2)
+}
+

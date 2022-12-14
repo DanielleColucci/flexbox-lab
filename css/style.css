@@ -70,3 +70,57 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.2)
 }
 
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+#search > input, div {
+  display: flex;
+  height: 50px;
+}
+
+input {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(249, 249, 249, 1);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  width: 75%;
+}
+
+#search > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+#search > div > button {
+  width: 16%;
+  margin: 0; 
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 25px;
+}
+
+#search > div > button:first-child {
+  margin: 0 0 0 20px;
+}
+
+#search > div > button:last-child {
+  margin: 0 20px 0 0;
+}

@@ -146,3 +146,27 @@ input {
   border-radius: 6px;
   padding: 8px;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img-placeholder {
+  height: 260px;
+  width: 340px;
+  background:rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  height: 20px;
+  font-size: 14px;
+}
